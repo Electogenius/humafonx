@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: x-large;
+    color: #000;
+    user-select: none;
+}
+#lockscreen{
+    z-index: 10;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(106, 122, 218);
+    text-align: center;
+    transition: opacity 500ms;
+    transition-timing-function: ease-in-out;
+}
+lstime{
+    top: 30vw
+}
+.i{
+    color: #fff
+}
+.bicc{
+    font-size: 40px;
+}
+#lsunlock{
+    top: 40vh;
+    left: 35vw;
+    border-radius: 25px;
+    background-color: #ababcc;
+    display: inline;
+    padding: 15vw;
+    position: absolute;
+}
+.hidden{
+    display: none;
+    opacity: 0;
+}
+#hscontrols{
+    background-color: cadetblue;
+}
+control{
+    color: white;
+    box-shadow: black 5px 5px 10px inset;
+}
+#notifbutton{
+    float: right;
+    padding-right: 5vw;
+}
+#appsbutton{
+    padding-left: 5vw
+}
+
+#yeq{
+    top: 0;
+    left: 20vw;
+    position: absolute;
+    display: block;
+    width: 60vw;
+    height: 30px;
+    overflow: auto;
+}
+#master{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+#homebutton{
+    float: right;
+    background-color: black;
+    color: white;
+}

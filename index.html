@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="Elm.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humafona</title>
+</head>
+<body>
+    <div id="lockscreen">
+        <div id="lstime" class="bicc show-time i">Welcome</div>
+        <div id="lsdate" class="show-date-full i">Double tap to unlock</div>
+        <div id="lsunlock" onclick="unlock('');"></div>
+    </div>
+    <div id="master">
+        <div id="hscontrols">
+            <control id="appsbutton">A</control>
+            <t id="yeq" class='scroll hidden'>
+                <t class="show-time i">err</t><br><t class="show-date-full i">err</t>
+            </t>
+            
+            <control id="notifbutton">&nbsp;::</control>
+            <control id="homebutton">
+                O
+            </control>
+        </div>
+        <div id="homescreen">
+            <t onclick="openApp(system.appCode.test)">hi</t>
+        </div>
+        <div id="apps">
+
+        </div>
+        <div id="appscripts">
+            
+        </div>
+    </div>
+    <!-- #meh zone -->
+    <script src="index.js"></script>
+</body>
+</html>
