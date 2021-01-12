@@ -1,4 +1,4 @@
-function elm(a, sysname) {
+function hyfon_string(a, sysname) {
     
     a = a.replace(/sys/gi, sysname)
 

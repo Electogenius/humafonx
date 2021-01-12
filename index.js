@@ -38,7 +38,7 @@ function unlock(attempt){
 
 function openApp(code) {
     var scriptt = document.getElementById('appscripts')
-    var res = document.createTextNode(elm(code, 'document.getElementById("homescreen")'))
+    var res = document.createTextNode(hyfon_string(code, 'document.getElementById("homescreen")'))
     var el = document.createElement('script')
     el.appendChild(res)
     scriptt.appendChild(el);
