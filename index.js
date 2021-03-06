@@ -6,12 +6,11 @@ var system = {
     appCode: {
         test:
 `@NAME-test;
-elm-test-'t'-'hello';
-var-hmm-'bruh';
+elm-test-'p'-'hello';
+var-hmm-'oo';
 elm-vartest-'t'-hmm;
 add-sys-test;
-add-sys-vartest;
-/*-what on earth is this mess*/;`
+add-sys-vartest`
     }
 }
 
@@ -31,8 +30,14 @@ setInterval(() => {
 
 function unlock(attempt){
     if (system.passwordCheck(attempt)){
-        $('#lockscreen').addClass('hidden');
-        $('#yeq').removeClass('hidden')
+        anime({
+        	targets: '#lockscreen',
+        	easing: "easeInSine",
+        	scale: 0,
+        	marginLeft: "-50vw",
+        	marginTop: "-50vh",
+        	duration: 500,
+        })
     }
 }
 
